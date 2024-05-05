@@ -35,16 +35,16 @@
       <div class="modal-body">
       <!--Task Title input-->
         <label for="taskTitle" class = "form-label"> Task Title</label>
-        <input type="text" class="form-control" id="taskTitle" placeholder="">
+        <input type="text" class="form-control" id="taskTitle">
       <!--Task Due Date input-->
         <label for="taskTitle" class = "form-label"> Task Due Date</label>
-        <input type="date" class="form-control" id="taskDue" placeholder="">
+        <input type="date" class="form-control" id="taskDue">
       <!--Task Description input-->
-        <label for="taskDesc" class = "form-label"> Task Title</label>
-        <input type="text" class="form-control" id="taskDesc" placeholder="">
+        <label for="taskDesc" class = "form-label mb-3"> Task Description</label>
+        <input type="text" class="form-control" id="taskDesc">
       </div>
       <div class="modal-footer">
-        <button class="btn btn-primary" id="addTask">Add Task</button>
+        <button type="submit" class ="btn btn-success create-task" id="addTask">Add Task</button>
       </div>
     </div>
   </div>
@@ -52,32 +52,32 @@
 
     <div class="row swim-lanes text-center justify-content-between">
       <div class="col-12 col-lg-4 d-flex">
-        <div id="to-do" class="card border-light mb-3 lane flex-grow-1">
+        <div id="to-do" class="card border-light mb-3 lane flex-grow-1 droppable">
           <div class="card-header bg-white">
             <h2 class="card-title mb-1">To Do</h2>
           </div>
           <div class="card-body bg-light">
-            <div id="todo-cards"></div>
+            <div id="todo-cards" class="droppable"></div>
           </div>
         </div>
       </div>
       <div class="col-12 col-lg-4 d-flex">
-        <div id="in-progress" class="card border-light mb-3 lane flex-grow-1">
+        <div id="in-progress" class="card border-light mb-3 lane flex-grow-1 droppable">
           <div class="card-header bg-white">
             <h2 class="card-title mb-1">In Progress</h2>
           </div>
           <div class="card-body bg-light">
-            <div id="in-progress-cards"></div>
+            <div id="in-progress-cards" class="droppable"></div>
           </div>
         </div>
         </div>
         <div class="col-12 col-lg-4 d-flex">
-          <div id="done" class="card border-light mb-3 lane flex-grow-1">
+          <div id="done" class="card border-light mb-3 lane flex-grow-1 droppable">
             <div class="card-header bg-white">
               <h2 class="card-title mb-1">Done</h2>
             </div>
             <div class="card-body bg-light">
-              <div id="done-cards"></div>
+              <div id="done-cards" class="droppable"></div>
           </div>
           </div>
       </div>
